@@ -36,10 +36,19 @@ define(['angular'], function(angular) {
             'loginURL' : '/portal/Login?profile=bucky',
             'logoutURL' : '/portal/Logout',
             'myuwHome' : 'https://my.wisc.edu',
-            'rootURL' : '/web',
-            'whatsNewURL' : null
+            'rootURL' : '/web'
 
         })
+        .constant('FOOTER_URLS', [
+          { "url" : "/web/static/myuw-help",
+            "target" : "_blank",
+            "title" : "Help"
+          },
+          { "url" : "https://my.wisc.edu/portal/p/feedback",
+            "target" : "_blank",
+            "title" : "Feedback"
+          }
+        ])
         .constant('APP_BETA_FEATURES', [
           {
             "id" : "sidebarQuicklinks",

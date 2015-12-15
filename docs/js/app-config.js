@@ -27,12 +27,23 @@ define(['angular'], function(angular) {
             'notificationFullURL' : 'notifications'
         })
         .constant('MISC_URLS',{
+            'back2ClassicURL' : null,
             'feedbackURL' : 'https://my.wisc.edu/portal/p/feedback',
             'helpdeskURL' : 'https://kb.wisc.edu/helpdesk/',
             'myuwHome' : 'https://my.wisc.edu',
             'rootURL' : '/uw-frame/',
             'logoutURL' : 'https://github.com/UW-Madison-DoIT/uw-frame',
         })
+        .constant('FOOTER_URLS', [
+          { "url" : "/web/static/myuw-help",
+            "target" : "_blank",
+            "title" : "Help"
+          },
+          { "url" : "https://my.wisc.edu/portal/p/feedback",
+            "target" : "_blank",
+            "title" : "Feedback"
+          }
+        ])
         .constant('APP_BETA_FEATURES', []);
 
     return config;
